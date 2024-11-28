@@ -6,37 +6,47 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="style.css">
 
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Product preview card component</title>
 </head>
 
 <body>
   <main class="product">
-    <section class="product__image-section">
+    <section class="product__banner">
       <img src="images/image-product-mobile.jpg" alt="Gabrielle Essence Eau De Parfum bottle" class="product__image">
     </section>
 
-    <section class="product__details">
-      <p class="product__type">Perfume</p>
-      <h1 class="product__name">Gabrielle Essence Eau De Parfum</h1>
-      <p class="product__description">
-        A floral, solar, and voluptuous interpretation composed by Olivier Polge,
-        Perfumer-Creator for the House of CHANEL.
-      </p>
+    <section class="product__info">
+      <div class="product__details">
+        <p class="product__type">Perfume</p>
+        <h1 class="product__name">Gabrielle Essence Eau De Parfum</h1>
+        <p class="product__description">
+          A floral, solar, and voluptuous interpretation composed by Olivier Polge,
+          Perfumer-Creator for the House of CHANEL.
+        </p>
+      </div>
+
+      <div class="product__pricing">
+        <p class="price__current">$149.99</p>
+        <p class="price__original" aria-label="Original price">$169.99</p>
+      </div>
+
+      <div class="product__actions">
+        <button class="button" type="button" aria-label="Add Gabrielle Essence Eau De Parfum to cart">
+          <img src="images/icon-cart.svg" alt="" class="button__icon" aria-hidden="true">
+          <span class="button__text">Add to Cart</span>
+        </button>
+      </div>
     </section>
 
-    <section class="product__pricing">
-      <p class="price__current">$149.99</p>
-      <p class="price__original" aria-label="Original price">$169.99</p>
-    </section>
 
-    <section class="product__actions">
-      <button class="button" type="button" aria-label="Add Gabrielle Essence Eau De Parfum to cart">
-        <img src="images/icon-cart.svg" alt="" class="button__icon" aria-hidden="true">
-        <span class="button__text">Add to Cart</span>
-      </button>
-    </section>
   </main>
 
   <footer class="attribution">
