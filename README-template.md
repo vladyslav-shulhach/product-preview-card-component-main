@@ -6,8 +6,7 @@ This project is a solution to the [Product preview card component challenge on F
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Mobile Version Preview](#mobile-version-preview)
-  - [Desktop Version Preview](#desktop-version-preview)
+  - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
@@ -15,9 +14,6 @@ This project is a solution to the [Product preview card component challenge on F
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -28,13 +24,11 @@ Users should be able to:
 - View the optimal layout depending on their device's screen size
 - See hover and focus states for interactive elements
 
-### Mobile Version Preview
-
-Below is a screenshot showcasing the project as it appears on a mobile device.
-
-### Desktop Version Preview
+### Screenshot
 
 Here is a screenshot of the project displayed on a desktop screen.
+
+![Desktop Version Preview](desktop-preview.png)
 
 ### Links
 
@@ -84,8 +78,7 @@ This project has given me a solid understanding of responsive design, SCSS, and 
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [Understanding CSS min(), max(), and clamp()](https://web.dev/articles/min-max-clamp) - This resource gave a great explanation of how to use `min()`, `max()`, and `clamp()` effectively for responsive design. The clear examples and interactive animations helped me understand how these functions adjust the layout dynamically.
 
 ## Author
 
