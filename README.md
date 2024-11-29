@@ -32,7 +32,7 @@ Here is a screenshot of the project displayed on a desktop screen.
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [here](https://www.frontendmentor.io/solutions/product-preview-card-component-solution--o4DuIGJfj)
 - Live Site URL: [here](https://product-preview-card-component-mai-vladyslav-shulhachs-projects.vercel.app/)
 
 ## My process
