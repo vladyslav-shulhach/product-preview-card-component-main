@@ -1,0 +1,118 @@
+/* Variables */
+/* Colors for interactions */
+/* Typography */
+/* Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(30, 38%, 92%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 26px 15px;
+  font-family: "Montserrat", sans-serif;
+}
+
+button {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+footer {
+  padding: 10px;
+}
+
+/* Styles for mobile version */
+.product {
+  background-color: hsl(0, 0%, 100%);
+  width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.product__content {
+  padding: 26px;
+  display: grid;
+  gap: 22px;
+}
+.product__image {
+  width: 100%;
+}
+.product__details {
+  color: hsl(228, 12%, 48%);
+  display: grid;
+  gap: 10px;
+}
+.product__type {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+}
+.product__name {
+  font-family: "Fraunces", serif;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: hsl(212, 21%, 14%);
+}
+.product__description {
+  font-size: 0.875rem;
+  line-height: 140%;
+  font-weight: 500;
+}
+.product__pricing {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.product__pricing .price__current {
+  font-family: "Fraunces", serif;
+  font-size: 1.75rem;
+  color: hsl(158, 36%, 37%);
+  font-weight: 700;
+}
+.product__pricing .price__original {
+  color: hsl(228, 12%, 48%);
+  text-decoration: line-through;
+}
+
+.button {
+  width: 100%;
+  padding: 15px 0;
+  background-color: hsl(158, 36%, 37%);
+  border-radius: 8px;
+  color: hsl(0, 0%, 100%);
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  transition: 200ms;
+}
+.button__text {
+  font-weight: 700;
+}
+.button:hover {
+  background-color: hsl(159, 36%, 47%);
+  transition: 200ms;
+}
+.button:active {
+  background-color: hsl(162, 37%, 27%);
+}
+
+.attribution {
+  font-size: 10px;
+  text-align: center;
+  color: hsl(228, 12%, 48%);
+}
+.attribution a {
+  color: hsl(228, 34%, 35%);
+}
+
+/* Styles *//*# sourceMappingURL=style.css.map */
