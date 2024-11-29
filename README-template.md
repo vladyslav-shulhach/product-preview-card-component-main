@@ -1,12 +1,13 @@
 # Frontend Mentor - Product preview card component solution
 
-This is a solution to the [Product preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This project is a solution to the [Product preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa). Frontend Mentor provides a variety of challenges to help developers practice and improve their coding skills by working on real-world projects. This challenge was a great opportunity to improve my HTML, CSS, and responsive design abilities.
 
 ## Table of contents
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
+  - [Mobile Version Preview](#mobile-version-preview)
+  - [Desktop Version Preview](#desktop-version-preview)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
@@ -27,17 +28,13 @@ Users should be able to:
 - View the optimal layout depending on their device's screen size
 - See hover and focus states for interactive elements
 
-### Screenshot
+### Mobile Version Preview
 
-![](./screenshot.jpg)
+Below is a screenshot showcasing the project as it appears on a mobile device.
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
+### Desktop Version Preview
 
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+Here is a screenshot of the project displayed on a desktop screen.
 
 ### Links
 
@@ -53,59 +50,44 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+- SCSS
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+1. **Mobile-First Methodology**  
+   Starting with the mobile layout first made it much easier to build the design incrementally and then expand it for larger screen sizes.
 
-To see how you can add code snippets, see below:
+2. **SCSS (Sassy CSS)**  
+   I explored SCSS and found it the most effective way to manage styles. SCSS allows for nesting, which simplifies the structure of CSS, especially when combined with BEM. This helped me structure the SCSS code better. It provided clarity and consistency when nesting styles.
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
+3. **Clamp() Function**  
+   At first, I was unsure about the purpose of the `clamp()` function and why it didn't behave as expected. Once I had learned more, I was able to grasp its role in responsive layouts. The `min` and `max` values define the boundaries, and the middle value determines how the layout adapts. This is how to use `clamp( )` for responsive design:
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+   ```scss
+   @media (min-width: 21.5rem) {
+       .product {
+           width: clamp(21.5rem, 70vw + 5rem, 37.5rem);
+       }
+   }
+   ```
+   This ensures the card's width adjusts smoothly between 21.5rem and 37.5rem based on the viewport width.
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+This project has given me a solid understanding of responsive design, SCSS, and modern CSS features. Moving forward, I plan to:
 
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+- Responsive design is a big part of modern web development. While this project works well on standard screen sizes, I want to make it even more responsive. This includes optimising layouts for really small screens, like older mobile devices with limited viewport widths, and really large screens, like ultrawide monitors. I'm going to look at techniques like using clamp() more precisely, creating custom breakpoints, and responsive typography to make it all look great and work well on all screen sizes.
+  
+- SCSS has shown itself to be a great tool for organising and streamlining styles. Going forward, I'll be building on my understanding of SCSS by incorporating mixins, functions and partials into future projects. I'll also be making my stylesheets more structured using partials to make them more scalable in larger projects.
+  
+- Making sure websites are accessible means that they can be used by everyone, including people with disabilities. I want to improve this project by adding features like ARIA roles to make it easier for screen readers to get the info they need.
 
 ### Useful resources
 
 - [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
 - [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
 
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
-
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
 - Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
 
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
